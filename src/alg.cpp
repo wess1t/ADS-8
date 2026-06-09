@@ -67,9 +67,9 @@ void printFreq(BST<std::string>& bst) {
             return first.first < second.first;
         });
     
-    std::ofstream outputFile("result/freq.txt");
+    std::ofstream outputFile("freq.txt");
     if (!outputFile) {
-        std::cout << "Cannot create result/freq.txt file!" << std::endl;
+        std::cout << "Cannot create freq.txt file!" << std::endl;
         return;
     }
     
